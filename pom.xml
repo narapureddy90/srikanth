@@ -41,8 +41,6 @@
         </snapshotRepository>
     </distributionManagement>
 </project>
-
-
         <plugins>
             <!-- Plugin for creating executable jar -->
             <plugin>
@@ -59,5 +57,11 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+    <repository>
+        <id>nexus-snapshots</id>
+        <url>http://13.158.78.48:8081/repository/java-package/</url>
+    </repository>
+    </distributionManagement>
 </project>
 
