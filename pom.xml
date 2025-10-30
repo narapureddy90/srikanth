@@ -24,12 +24,30 @@
     </dependencies>
 
     <build>
-        <distributionManagement>
-    <repository>
-        <id>nexus-snapshots</id>
-        <url>http://13.158.78.48:8081/repository/java-package/</url>
-    </repository>
-</distributionManagement>
+        <project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>simple-java-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>
+            ...
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-admin</id>
+            <url>http://13.158.78.48:8081/repository/java-package//</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-admin</id>
+            <url>http://13.158.78.48:8081/repository/java-package/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
+
 
         <plugins>
             <!-- Plugin for creating executable jar -->
