@@ -24,6 +24,13 @@
     </dependencies>
 
     <build>
+        <distributionManagement>
+    <repository>
+        <id>nexus-snapshotss</id>
+        <url>http://13.158.78.48:8081/repository/java-package/</url>
+    </repository>
+</distributionManagement>
+
         <plugins>
             <!-- Plugin for creating executable jar -->
             <plugin>
