@@ -30,12 +30,6 @@
     <artifactId>simple-java-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <build>
-        <plugins>
-            ...
-        </plugins>
-    </build>
-
     <distributionManagement>
         <repository>
             <id>nexus-admin</id>
